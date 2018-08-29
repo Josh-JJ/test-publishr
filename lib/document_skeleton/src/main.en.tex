@@ -1,0 +1,84 @@
+% input basic formatting instructions to keep this file simpler
+\input{book.en}
+
+
+% --------------- DEFINE "DUST" PAGE -------------------
+\extratitle{
+\small
+\vspace*{4\baselineskip}
+\begin{center}\book{Book Title}\end{center}
+\vspace*{2\baselineskip}
+\input{covertext.en}
+}
+
+% --------------- DEFINE TITLE PAGE -------------------
+\title{Book Title}
+\author{\textsc{Author}}
+\subject{\textsf{This is a\\subtitle}}
+\date{} % leave date empty
+\publishers{Publisher Name}
+
+
+
+% --------------- DEFINE COPYRIGHT PAGE ---------------
+\lowertitleback{
+\small
+Copyright \copyright{} Authorname\\
+http://www.example.org
+\vspace*{1\baselineskip}
+1. Edition 2012\\
+Publihsing Company (www.publishingcompany.com)\\
+ISBN 123-4-567890-12-3
+\vspace*{1\baselineskip}
+All Rights reserved. Add additional copyright instructions here ...
+\vspace*{1\baselineskip}
+Another note.
+}
+
+
+
+
+% --------------- THE ACTUAL BEGINNING OF THE DOCUMENT ---------------
+\begin{document}
+
+% Uncomment this line to see the actual values of the margin settings
+% \layout{}
+
+% ----------- layout debugging --------
+
+% uncomment the following line to output the margin variables with all current values
+% \layout{}
+
+% ---------- beginning ------------
+% turn off page numbering at the beginning
+\ofoot[]{}
+% output the previously defined title pages
+\maketitle
+% output the automatic table of contents
+\tableofcontents
+ % start page numbering here
+\ofoot[]{\pagemark}
+% Set the top left header for the whole document
+\lehead[]{\normalfont\sffamily\footnotesize{}Book Title Header Left}
+
+
+% ---------- main contents ------------
+% include all your files manually here, one after the other:
+\input{01.chapter1.en}
+\input{02.chapter2.en}
+
+
+% ---------- Index ------------
+% uncomment the following in case you want a classical keyword index
+
+% \newpage
+% \mbox{}
+% \newpage
+% \mbox{}
+% \cleardoublepage
+% \rohead[]{\sffamily\footnotesize Index}
+% \addcontentsline{toc}{chapter}{Index}
+% \scriptsize
+% \printindex
+
+\end{document}

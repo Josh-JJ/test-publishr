@@ -1,0 +1,38 @@
+identifier: book1
+title: Title
+creator: Creator
+publisher: PublishR
+subject: Subject
+description: Description
+isbn: isbn
+copyright: Copyright
+language: en
+footnote_heading: FOOTNOTES
+kramdown_options:
+  :smart_quotes: ['sbquo', 'lsquo', 'bdquo', 'ldquo']
+  :latex_headers: ['chapter', 'section*', 'subsection*', 'subsubsection*', 'paragraph*', 'subparagraph*']
+  :auto_ids: true
+:start_quote_strings:
+  - MsoQuote
+  - BodyTextQuote
+  - BodyTextTranscript
+  - BodyTextEmail
+  - body-text-transcript
+  - body-text-email
+  - QuoteExcerpt
+  - quotetranscripts
+  - ARIAL
+  - quote-excerpt
+  - quote-transcripts
+  - quote-email
+  - quote-in-quote
+  - body-text-transcript
+  - quote-western
+:end_quote_strings:
+  - MsoBodyText
+  - BodyTextMod
+  - margin-bottom
+  - body-text-mod
+  - body-western
+  - body-text
+  - text-body

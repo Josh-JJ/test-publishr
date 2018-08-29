@@ -1,0 +1,9 @@
+latex
+epub
+*~
+*.epub
+*.pdf
+*.mobi
+*.zip
+*sass-cache
+out
